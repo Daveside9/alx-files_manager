@@ -12,7 +12,7 @@ should();
 
 describe('testing App Status Endpoints', () => {
   describe('gET /status', () => {
-    it('returns the status of redis and mongo connection', async () => {
+    it('returns_the_status_of_redis_and_mongo_connection', async () => {
       const response = await request(app).get('/status').send();
       const body = JSON.parse(response.text);
 
